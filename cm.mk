@@ -19,7 +19,13 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 ## Inherit device files
-$(call inherit-product, device/samsung/trebon/trebon.mk)
+$(call inherit-product, device/samsung/trebon/full_trebon.mk)
+
+PRODUCT_RELEASE_NAME := trebon
+
+CM_BUILDTYPE := dev_tester_android_readone
+CM_NUMERICAL_VERSION := 0.1
+
 
 ## Setup device configuration
 PRODUCT_NAME := cm_trebon
@@ -32,3 +38,6 @@ PRODUCT_DEVICE := trebon
 ## Bootanimation
 TARGET_SCREEN_HEIGHT := 480
 TARGET_SCREEN_WIDTH := 320
+
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=samsung/GT-S7500/GT-S7500:2.3.6/GINGERBREAD/XXKQN:user/release-keys PRIVATE_BUILD_DESC="GT-S7500-user 2.3.6 GINGERBREAD XXKQN release-keys"
+
