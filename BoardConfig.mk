@@ -12,10 +12,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# BoardConfig.mk
+# 
+#
+#
+# This file sets variables that control the way modules are built
+# thorughout the system. It should not be used to conditionally
+# disable makefiles (the proper mechanism to control what gets
+# included in a build is to use PRODUCT_PACKAGES in a product
+# definition file).
 #
 
-include device/samsung/trebon/BoardConfigCommon.mk
+# WARNING: This line must come *before* including the proprietary
+# variant, so that it gets overwritten by the parent (which goes
+# against the traditional rules of inheritance).
+
+# Vendor stuff
+
+include device/samsung/trebon/BoardConfigvendor.mk
 
 ## Platform
 TARGET_BOOTLOADER_BOARD_NAME := trebon
