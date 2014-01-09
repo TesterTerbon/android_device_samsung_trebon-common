@@ -26,4 +26,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/trebon.mk 
+    $(LOCAL_DIR)/full_trebon.mk 
