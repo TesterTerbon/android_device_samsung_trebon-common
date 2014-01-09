@@ -16,11 +16,32 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/trebon/overlay
 
 include device/samsung/trebon/trebon.mk
 
+# Filesystem management tools
+PRODUCT_PACKAGES += \
+    badblocks \
+    e2fsck \
+    mke2fs \
+    mke2fs.conf \
+    resize2fs \
+    tune2fs 
+   
+
+# Usb accessory and Wifi
+PRODUCT_PACKAGES += \
+    libnetcmdiface
+
+# Device-specific packages
+PRODUCT_PACKAGES += \
+    sensors.trebon \
+    AriesParts
+
 ## Video
 PRODUCT_PACKAGES += \
     libstagefrighthw \
     libmm-omxcore \
-    libOmxCore
+    libOmxCore\
+    libc2dcolorconvert \
+    libdashplayer
 
 ## Graphics
 PRODUCT_PACKAGES += \
