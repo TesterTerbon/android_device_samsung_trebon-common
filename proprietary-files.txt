@@ -33,4 +33,3 @@
 /lib/libsecril-client.so
 /lib/libsec-ril.so
 /lib/libsensor_yamaha_test.so
-/lib/libcamera.so
