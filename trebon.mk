@@ -14,7 +14,6 @@
 
 DEVICE_PACKAGE_OVERLAYS += device/samsung/trebon/overlay
 
-include device/samsung/trebon/trebon.mk
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
