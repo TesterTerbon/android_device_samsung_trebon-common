@@ -27,7 +27,7 @@
 # against the traditional rules of inheritance).
 
 # Vendor stuff
-include device/samsung/trebon/BoardConfigvendor.mk
+include vendor/samsung/trebon/BoardConfigVendor.mk
 
 
 # create the folder /usr to prevent the build from failing
