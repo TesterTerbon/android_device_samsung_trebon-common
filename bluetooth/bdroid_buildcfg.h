@@ -18,7 +18,7 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "GT-S7500"
+#define BTM_DEF_LOCAL_NAME   "msm7x27a"
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
 
 #define BLE_INCLUDED FALSE

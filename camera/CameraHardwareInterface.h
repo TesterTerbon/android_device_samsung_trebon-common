@@ -19,14 +19,7 @@
 
 #include <binder/IMemory.h>
 #include <utils/RefBase.h>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 #include <ui/legacy/Overlay.h>
->>>>>>> 43f6096a538d97b412d68dbb18e1b2fd3bdbdcee
-=======
-#include <ui/legacy/Overlay.h>
->>>>>>> 43f6096a538d97b412d68dbb18e1b2fd3bdbdcee
 #include <camera/Camera.h>
 #include <camera/CameraParameters.h>
 
@@ -243,23 +236,10 @@ namespace android {
      * If getNumberOfCameras() returns N, the valid cameraId for getCameraInfo()
      * and openCameraHardware() is 0 to N-1.
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    extern "C" int SEC_getNumberOfCameras();
-    extern "C" void SEC_getCameraInfo(int cameraId, struct CameraInfo* cameraInfo);
-    /* HAL should return NULL if it fails to open camera hardware. */
-    extern "C" sp<CameraHardwareInterface> SEC_openCameraHardware(int cameraId);
-=======
-=======
->>>>>>> 43f6096a538d97b412d68dbb18e1b2fd3bdbdcee
     extern "C" int HAL_getNumberOfCameras();
     extern "C" void HAL_getCameraInfo(int cameraId, struct CameraInfo* cameraInfo);
     /* HAL should return NULL if it fails to open camera hardware. */
     extern "C" sp<CameraHardwareInterface> HAL_openCameraHardware(int cameraId);
-<<<<<<< HEAD
->>>>>>> 43f6096a538d97b412d68dbb18e1b2fd3bdbdcee
-=======
->>>>>>> 43f6096a538d97b412d68dbb18e1b2fd3bdbdcee
 
 };  // namespace android
 
